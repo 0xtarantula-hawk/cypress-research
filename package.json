@@ -4,7 +4,8 @@
   "description": "rpc request",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:api1": "npx cypress run --spec \"cypress/e2e/1-api-test/*\"  --record --key=830bc120-4052-444f-8adf-dbe234b5748c",
+    "test:smoke": "npx cypress run --spec \"**/*.smoke.cy.js\"  --record --key=830bc120-4052-444f-8adf-dbe234b5748c"
   },
   "keywords": [],
   "author": "",
