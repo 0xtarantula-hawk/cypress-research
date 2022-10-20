@@ -17,7 +17,7 @@ context('test rpc request <EXPLORER> <SMOKE>', () => {
         })
     })
 
-    it.only('get beacon block by height', () => {
+    it('get beacon block by height', () => {
         cy.request({
             method: 'POST',
             url: 'https://testnet.incognito.org/fullnode',
